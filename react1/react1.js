@@ -40,16 +40,16 @@ class Cars {
   
     accelerate(el) {
       this.speed += el;
-      this.check_motion;
+      this.check_motion();
     }
     brake(el) {
         this.speed -= el;
-        this.check_motion;
+        this.check_motion();
       }
 
     emergency_brake() {
       this.speed = 0;
-      this.check_motion;
+      this.check_motion();
     }
     status() {
       return ` the car ${this.brand} ${this.model} is moving ${this.speed} km/h of speed and status is : ${this.motion}`;
